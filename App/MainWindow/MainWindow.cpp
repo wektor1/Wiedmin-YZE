@@ -15,8 +15,6 @@ MainWindow::MainWindow(QWidget* parent)
         &MainWindow::addCharacter);
     connect(ui->deleteCharsButton, &QPushButton::clicked, this,
         &MainWindow::removeCharacters);
-
-    // connect(charList, &QListWidget::itemClicked, this, QListWidget::setCurrentItem);
 }
 
 MainWindow::~MainWindow()
@@ -34,8 +32,9 @@ void MainWindow::addCharacter()
 
 void MainWindow::removeCharacters()
 {
+    const auto selectedCharacters = charList->selectedItems();
     std::set<int> rows {};
-    for (auto character : charList->selectedItems()) {
+    for (const auto& character : selectedCharacters) {
         rows.insert(charList->row(character));
     }
     std::for_each(rows.rbegin(), rows.rend(), [this](auto row) {
