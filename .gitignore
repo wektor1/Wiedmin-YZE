@@ -34,6 +34,8 @@ Thumbs.db
 *.rc
 /.qmake.cache
 /.qmake.stash
+compile_commands.*
+*.cache
 
 # qtcreator generated files
 *.pro.user*
@@ -47,6 +49,8 @@ CMakeLists.txt.user*
 .*.swp
 
 # Visual Studio generated files
+*.vscode
+*.code-workspace
 *.ib_pdb_index
 *.idb
 *.ilk

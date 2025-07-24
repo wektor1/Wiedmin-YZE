@@ -1,5 +1,4 @@
-#ifndef MAINWINDOW_HPP
-#define MAINWINDOW_HPP
+#pragma once
 
 #include <QListWidget>
 #include <QMainWindow>
@@ -11,19 +10,18 @@ class MainWindow;
 QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow {
-    Q_OBJECT
+  Q_OBJECT
 
 public:
-    MainWindow(QWidget* parent = nullptr);
-    ~MainWindow();
+  MainWindow(QWidget *parent = nullptr);
+  ~MainWindow();
 
 private slots:
-    void addCharacter();
-    void removeCharacters();
+  void addCharacter();
+  void removeCharacters();
 
 private:
-    Ui::MainWindow* ui;
-    QListWidget* charList;
-    int n { 0 };
+  Ui::MainWindow *ui;
+  QListWidget *charList;
+  int n{0};
 };
-#endif // MAINWINDOW_HPP
