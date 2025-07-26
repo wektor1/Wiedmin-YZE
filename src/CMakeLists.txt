@@ -1,15 +1,19 @@
 set(PROJECT_SOURCES
     main.cpp
+
     MainWindow/MainWindow.cpp
     MainWindow/MainWindow.hpp
     MainWindow/MainWindow.ui
+
+    Character/CharacterWindow.hpp
+    Character/CharacterWindow.cpp
+    Character/CharacterWindow.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(WiedzminYzeApp
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        Character/CharacterWindow.hpp Character/CharacterWindow.cpp Character/CharacterWindow.ui
     )
 
 # Define target properties for Android with Qt 6 as:
@@ -31,9 +35,9 @@ else()
     endif()
 endif()
 
-target_link_libraries(WiedzminYzeApp PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
-
-# target_link_libraries(WiedzminYzeApp PRIVATE dpp::dpp)
+target_link_libraries(WiedzminYzeApp PRIVATE
+    Qt${QT_VERSION_MAJOR}::Widgets
+    Qt${QT_VERSION_MAJOR}::Gui)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
