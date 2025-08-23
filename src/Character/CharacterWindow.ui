@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>743</width>
-    <height>1075</height>
+    <width>749</width>
+    <height>1164</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -641,9 +641,9 @@
   <widget class="QFrame" name="frame_2">
    <property name="geometry">
     <rect>
-     <x>560</x>
+     <x>550</x>
      <y>690</y>
-     <width>181</width>
+     <width>191</width>
      <height>121</height>
     </rect>
    </property>
@@ -658,13 +658,13 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>178</width>
+      <width>191</width>
       <height>111</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_7">
      <item>
-      <layout class="QGridLayout" name="initiativeLayout" rowstretch="0,0" rowminimumheight="0,0">
+      <layout class="QGridLayout" name="initiativeLayout" rowstretch="0" rowminimumheight="0">
        <property name="horizontalSpacing">
         <number>4</number>
        </property>
@@ -725,23 +725,55 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="testRoll">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="text">
-        <string>Rzuć Test/Atak</string>
-       </property>
-       <property name="autoDefault">
-        <bool>false</bool>
-       </property>
-       <property name="flat">
-        <bool>false</bool>
-       </property>
-      </widget>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_46">
+         <property name="text">
+          <string>Mod:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="rollMod">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimum">
+          <number>-10</number>
+         </property>
+         <property name="maximum">
+          <number>10</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="testRoll">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Test/Atak</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
     </layout>
    </widget>
@@ -913,7 +945,7 @@
     <rect>
      <x>10</x>
      <y>80</y>
-     <width>551</width>
+     <width>561</width>
      <height>83</height>
     </rect>
    </property>
@@ -931,7 +963,7 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>551</width>
+      <width>557</width>
       <height>81</height>
      </rect>
     </property>
@@ -14609,9 +14641,9 @@
    <property name="geometry">
     <rect>
      <x>580</x>
-     <y>10</y>
-     <width>141</width>
-     <height>71</height>
+     <y>0</y>
+     <width>161</width>
+     <height>91</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -14625,8 +14657,8 @@
      <rect>
       <x>10</x>
       <y>0</y>
-      <width>131</width>
-      <height>71</height>
+      <width>144</width>
+      <height>83</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout">
@@ -16318,7 +16350,7 @@
      <item>
       <widget class="QToolBox" name="equipment">
        <property name="currentIndex">
-        <number>0</number>
+        <number>4</number>
        </property>
        <widget class="QWidget" name="selfItems">
         <property name="geometry">
@@ -19021,7 +19053,7 @@
     <rect>
      <x>580</x>
      <y>90</y>
-     <width>141</width>
+     <width>161</width>
      <height>101</height>
     </rect>
    </property>
@@ -19034,7 +19066,7 @@
    <widget class="QWidget" name="verticalLayoutWidget_3">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>10</x>
       <y>0</y>
       <width>141</width>
       <height>101</height>
@@ -28902,7 +28934,7 @@
      <x>340</x>
      <y>820</y>
      <width>401</width>
-     <height>251</height>
+     <height>341</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -29097,9 +29129,9 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>140</y>
+      <y>150</y>
       <width>401</width>
-      <height>111</height>
+      <height>179</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -29250,6 +29282,75 @@
         <widget class="QSpinBox" name="weapon2Value"/>
        </item>
       </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_11">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>1080</y>
+     <width>321</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>321</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_45">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Zamożność:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_44">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Monety:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QSpinBox" name="coinsValue">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QSpinBox" name="richValue">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="maximum">
+        <number>5</number>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
