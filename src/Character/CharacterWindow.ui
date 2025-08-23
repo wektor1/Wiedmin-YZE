@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>731</width>
-    <height>1046</height>
+    <width>743</width>
+    <height>1075</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -641,10 +641,10 @@
   <widget class="QFrame" name="frame_2">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>1010</y>
-     <width>271</width>
-     <height>31</height>
+     <x>560</x>
+     <y>690</y>
+     <width>181</width>
+     <height>121</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -653,58 +653,87 @@
    <property name="frameShadow">
     <enum>QFrame::Shadow::Raised</enum>
    </property>
-   <widget class="QWidget" name="gridLayoutWidget_5">
+   <widget class="QWidget" name="verticalLayoutWidget_8">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>271</width>
-      <height>31</height>
+      <width>178</width>
+      <height>111</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="initiativeLayout">
-     <item row="0" column="1">
-      <spacer name="horizontalSpacer_6">
-       <property name="orientation">
-        <enum>Qt::Orientation::Horizontal</enum>
+    <layout class="QVBoxLayout" name="verticalLayout_7">
+     <item>
+      <layout class="QGridLayout" name="initiativeLayout" rowstretch="0,0" rowminimumheight="0,0">
+       <property name="horizontalSpacing">
+        <number>4</number>
        </property>
-       <property name="sizeType">
-        <enum>QSizePolicy::Policy::Fixed</enum>
+       <property name="verticalSpacing">
+        <number>2</number>
        </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>5</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_26">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Inicjatywa&lt;/span&gt;: &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="label_27">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>+k6</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>5</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="3">
+        <widget class="QSpinBox" name="initiativeBox"/>
+       </item>
+      </layout>
      </item>
-     <item row="0" column="2">
-      <widget class="QLabel" name="label_26">
+     <item>
+      <widget class="QPushButton" name="initiativeRoll">
        <property name="text">
-        <string>Inicjatywa: </string>
+        <string>Rzuć Inicjatywę</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
        </property>
       </widget>
      </item>
-     <item row="0" column="4">
-      <widget class="QLabel" name="label_27">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-        </font>
+     <item>
+      <widget class="QPushButton" name="testRoll">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
        </property>
        <property name="text">
-        <string>+k6</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="3">
-      <widget class="QSpinBox" name="initiativeBox"/>
-     </item>
-     <item row="0" column="5">
-      <widget class="QPushButton" name="pushButton">
-       <property name="text">
-        <string>Rzuć</string>
+        <string>Rzuć Test/Atak</string>
        </property>
        <property name="autoDefault">
         <bool>false</bool>
@@ -14594,9 +14623,9 @@
    <widget class="QWidget" name="formLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>10</x>
       <y>0</y>
-      <width>141</width>
+      <width>131</width>
       <height>71</height>
      </rect>
     </property>
@@ -14622,6 +14651,16 @@
        </property>
       </widget>
      </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_29">
+       <property name="text">
+        <string>Zdrowie</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QSpinBox" name="maxHealthBox"/>
+     </item>
      <item row="2" column="0">
       <widget class="QLabel" name="label_30">
        <property name="text">
@@ -14629,18 +14668,8 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="1">
-      <widget class="QSpinBox" name="maxHealthBox"/>
-     </item>
      <item row="2" column="1">
       <widget class="QSpinBox" name="maxMagicBox"/>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label_29">
-       <property name="text">
-        <string>Zdrowie</string>
-       </property>
-      </widget>
      </item>
     </layout>
    </widget>
@@ -14650,8 +14679,8 @@
     <rect>
      <x>340</x>
      <y>200</y>
-     <width>381</width>
-     <height>511</height>
+     <width>401</width>
+     <height>481</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -14690,8 +14719,8 @@
      <rect>
       <x>0</x>
       <y>40</y>
-      <width>381</width>
-      <height>271</height>
+      <width>401</width>
+      <height>241</height>
      </rect>
     </property>
     <property name="palette">
@@ -15185,8 +15214,8 @@
    <widget class="QTableWidget" name="charItemsAmbTable">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>310</y>
+      <x>10</x>
+      <y>280</y>
       <width>381</width>
       <height>101</height>
      </rect>
@@ -15708,8 +15737,8 @@
    <widget class="QTableWidget" name="charItemsAmbTable_2">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>410</y>
+      <x>10</x>
+      <y>380</y>
       <width>381</width>
       <height>101</height>
      </rect>
@@ -16251,7 +16280,7 @@
      <x>10</x>
      <y>690</y>
      <width>321</width>
-     <height>351</height>
+     <height>381</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -16266,7 +16295,7 @@
       <x>-1</x>
       <y>-1</y>
       <width>321</width>
-      <height>351</height>
+      <height>381</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -16297,7 +16326,7 @@
           <x>0</x>
           <y>0</y>
           <width>319</width>
-          <height>176</height>
+          <height>206</height>
          </rect>
         </property>
         <attribute name="label">
@@ -16309,7 +16338,7 @@
            <x>0</x>
            <y>0</y>
            <width>321</width>
-           <height>101</height>
+           <height>201</height>
           </rect>
          </property>
          <property name="palette">
@@ -16823,7 +16852,7 @@
           <x>0</x>
           <y>0</y>
           <width>319</width>
-          <height>176</height>
+          <height>206</height>
          </rect>
         </property>
         <attribute name="label">
@@ -16835,7 +16864,7 @@
            <x>0</x>
            <y>0</y>
            <width>321</width>
-           <height>151</height>
+           <height>201</height>
           </rect>
          </property>
          <property name="palette">
@@ -17346,6 +17375,14 @@
         </widget>
        </widget>
        <widget class="QWidget" name="wagonItems">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>319</width>
+          <height>206</height>
+         </rect>
+        </property>
         <attribute name="label">
          <string>Wóz</string>
         </attribute>
@@ -17355,7 +17392,7 @@
            <x>0</x>
            <y>0</y>
            <width>321</width>
-           <height>171</height>
+           <height>201</height>
           </rect>
          </property>
          <property name="palette">
@@ -17876,6 +17913,14 @@
         </widget>
        </widget>
        <widget class="QWidget" name="smallItems">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>319</width>
+          <height>206</height>
+         </rect>
+        </property>
         <attribute name="label">
          <string>Małe przedmioty</string>
         </attribute>
@@ -17885,7 +17930,7 @@
            <x>0</x>
            <y>0</y>
            <width>321</width>
-           <height>171</height>
+           <height>211</height>
           </rect>
          </property>
          <property name="palette">
@@ -18411,6 +18456,14 @@
         </widget>
        </widget>
        <widget class="QWidget" name="resourcesItems">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>319</width>
+          <height>206</height>
+         </rect>
+        </property>
         <attribute name="label">
          <string>Zasoby</string>
         </attribute>
@@ -18420,7 +18473,7 @@
            <x>0</x>
            <y>0</y>
            <width>321</width>
-           <height>161</height>
+           <height>201</height>
           </rect>
          </property>
          <property name="palette">
@@ -18996,9 +19049,9 @@
           <colorrole role="WindowText">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>0</red>
-             <green>0</green>
-             <blue>0</blue>
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -19151,9 +19204,9 @@
           <colorrole role="WindowText">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>0</red>
-             <green>0</green>
-             <blue>0</blue>
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -19314,7 +19367,7 @@
           </colorrole>
           <colorrole role="Button">
            <brush brushstyle="SolidPattern">
-            <color alpha="255">
+            <color alpha="107">
              <red>255</red>
              <green>255</green>
              <blue>255</blue>
@@ -19377,10 +19430,10 @@
           </colorrole>
           <colorrole role="ButtonText">
            <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>127</red>
-             <green>127</green>
-             <blue>127</blue>
+            <color alpha="135">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -19472,9 +19525,9 @@
           <colorrole role="WindowText">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>0</red>
-             <green>0</green>
-             <blue>0</blue>
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -19627,9 +19680,9 @@
           <colorrole role="WindowText">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>0</red>
-             <green>0</green>
-             <blue>0</blue>
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -19790,7 +19843,7 @@
           </colorrole>
           <colorrole role="Button">
            <brush brushstyle="SolidPattern">
-            <color alpha="255">
+            <color alpha="107">
              <red>255</red>
              <green>255</green>
              <blue>255</blue>
@@ -19853,10 +19906,10 @@
           </colorrole>
           <colorrole role="ButtonText">
            <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>127</red>
-             <green>127</green>
-             <blue>127</blue>
+            <color alpha="135">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -19948,9 +20001,9 @@
           <colorrole role="WindowText">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>0</red>
-             <green>0</green>
-             <blue>0</blue>
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -20103,9 +20156,9 @@
           <colorrole role="WindowText">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>0</red>
-             <green>0</green>
-             <blue>0</blue>
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -20266,7 +20319,7 @@
           </colorrole>
           <colorrole role="Button">
            <brush brushstyle="SolidPattern">
-            <color alpha="255">
+            <color alpha="107">
              <red>255</red>
              <green>255</green>
              <blue>255</blue>
@@ -20329,10 +20382,10 @@
           </colorrole>
           <colorrole role="ButtonText">
            <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>127</red>
-             <green>127</green>
-             <blue>127</blue>
+            <color alpha="135">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -20424,9 +20477,9 @@
           <colorrole role="WindowText">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>0</red>
-             <green>0</green>
-             <blue>0</blue>
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -20579,9 +20632,9 @@
           <colorrole role="WindowText">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>0</red>
-             <green>0</green>
-             <blue>0</blue>
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -20742,7 +20795,7 @@
           </colorrole>
           <colorrole role="Button">
            <brush brushstyle="SolidPattern">
-            <color alpha="255">
+            <color alpha="107">
              <red>255</red>
              <green>255</green>
              <blue>255</blue>
@@ -20805,10 +20858,10 @@
           </colorrole>
           <colorrole role="ButtonText">
            <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>127</red>
-             <green>127</green>
-             <blue>127</blue>
+            <color alpha="135">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -20899,7 +20952,7 @@
    <property name="geometry">
     <rect>
      <x>340</x>
-     <y>720</y>
+     <y>690</y>
      <width>211</width>
      <height>91</height>
     </rect>
@@ -28839,6 +28892,364 @@
         </widget>
        </widget>
       </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_10">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>820</y>
+     <width>401</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>401</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer_15">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Policy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>5</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_35">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Pancerz</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label_36">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Zbroja:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::TextFormat::AutoText</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPlainTextEdit" name="armrDescription">
+           <property name="contextMenuPolicy">
+            <enum>Qt::ContextMenuPolicy::DefaultContextMenu</enum>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LayoutDirection::LeftToRight</enum>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+           </property>
+           <property name="sizeAdjustPolicy">
+            <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustToContents</enum>
+           </property>
+           <property name="tabChangesFocus">
+            <bool>false</bool>
+           </property>
+           <property name="documentTitle">
+            <string/>
+           </property>
+           <property name="plainText">
+            <string/>
+           </property>
+           <property name="textInteractionFlags">
+            <set>Qt::TextInteractionFlag::LinksAccessibleByKeyboard|Qt::TextInteractionFlag::LinksAccessibleByMouse|Qt::TextInteractionFlag::TextBrowserInteraction|Qt::TextInteractionFlag::TextEditable|Qt::TextInteractionFlag::TextEditorInteraction|Qt::TextInteractionFlag::TextSelectableByKeyboard|Qt::TextInteractionFlag::TextSelectableByMouse</set>
+           </property>
+           <property name="backgroundVisible">
+            <bool>true</bool>
+           </property>
+           <property name="centerOnScroll">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>Rodzaj</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QLabel" name="label_37">
+             <property name="layoutDirection">
+              <enum>Qt::LayoutDirection::LeftToRight</enum>
+             </property>
+             <property name="text">
+              <string>WYP.</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="dmgReduct"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QLabel" name="label_38">
+             <property name="layoutDirection">
+              <enum>Qt::LayoutDirection::LeftToRight</enum>
+             </property>
+             <property name="text">
+              <string>UTR.</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="armrEffect">
+             <property name="minimum">
+              <number>-3</number>
+             </property>
+             <property name="maximum">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="helmetBox">
+         <property name="text">
+          <string>HEŁM (rzuć 2 x Ciężkie rany i wybierz)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="helmetBox_2">
+         <property name="text">
+          <string>TARCZA (parowanie +2)</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_8">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Policy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>5</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_9">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>140</y>
+      <width>401</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_8">
+     <item>
+      <widget class="QLabel" name="label_43">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Broń&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <spacer name="horizontalSpacer_16">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_39">
+         <property name="text">
+          <string>Rodzaj:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_19">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>50</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_40">
+         <property name="text">
+          <string>Celność:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_41">
+         <property name="text">
+          <string>Obrażenia:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_42">
+         <property name="text">
+          <string>Wartość:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QCheckBox" name="weapon1Box">
+         <property name="layoutDirection">
+          <enum>Qt::LayoutDirection::RightToLeft</enum>
+         </property>
+         <property name="text">
+          <string>1.</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPlainTextEdit" name="weapon1Text">
+         <property name="plainText">
+          <string/>
+         </property>
+         <property name="backgroundVisible">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Rodzaj</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="weapon1Aim"/>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="weapon1Dmg"/>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="weapon1Value"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QCheckBox" name="weapon2Box">
+         <property name="layoutDirection">
+          <enum>Qt::LayoutDirection::RightToLeft</enum>
+         </property>
+         <property name="text">
+          <string>2.</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPlainTextEdit" name="weapon2Text">
+         <property name="backgroundVisible">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Rodzaj</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="weapon2Aim"/>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="weapon2Dmg"/>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="weapon2Value"/>
+       </item>
+      </layout>
      </item>
     </layout>
    </widget>
