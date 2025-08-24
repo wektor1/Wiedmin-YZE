@@ -1,5 +1,6 @@
 #pragma once
 
+#include "List/CharacterList.hpp"
 #include <QListWidget>
 #include <QMainWindow>
 
@@ -16,12 +17,7 @@ public:
   MainWindow(QWidget *parent = nullptr);
   ~MainWindow();
 
-private slots:
-  void addCharacter();
-  void removeCharacters();
-
 private:
   Ui::MainWindow *ui;
-  QListWidget *charList;
-  int n{0};
+  CharacterList charList;
 };

@@ -1,4 +1,4 @@
-#include "CharacterWindow.hpp"
+#include "Sheet/CharacterWindow.hpp"
 #include "ui_CharacterWindow.h"
 
 CharacterWindow::CharacterWindow(QWidget *parent)
