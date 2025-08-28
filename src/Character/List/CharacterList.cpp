@@ -19,6 +19,8 @@ void CharacterList::removeCharacters() {
   for (const auto &character : selectedCharacters) {
     rows.insert(charList->row(character));
   }
-  std::for_each(rows.rbegin(), rows.rend(),
-                [this](auto row) { charList->takeItem(row); });
+  std::for_each(rows.rbegin(), rows.rend(), [this](auto row) {
+    charList->takeItem(row);
+    characters.erase(characters.begin() + row);
+  });
 }

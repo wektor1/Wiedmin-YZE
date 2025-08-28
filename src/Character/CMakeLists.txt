@@ -11,6 +11,6 @@ add_library(Character_lib STATIC
 
 target_include_directories(Character_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-target_link_libraries(Character_lib PRIVATE
+target_link_libraries(Character_lib PUBLIC
   Qt${QT_VERSION_MAJOR}::Widgets
 )
